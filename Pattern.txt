@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int i, j, rows;
+     
+    cout << "Enter No Of 1 & 0 Pattern Value = ";
+    cin >> rows;
+
+    cout << "No of 1 and 0 Numbers Pattern\n"; 
+
+    for(i = 1; i <= rows; i++)
+    {
+    	for(j = 1; j <= i; j++)
+		{
+            if(j % 2 == 0) {
+                cout << 0 << " ";
+            }
+            else {
+                cout << 1 << " ";
+            } 
+        }
+        cout << "\n";
+    }		
+ 	return 0;
+}
